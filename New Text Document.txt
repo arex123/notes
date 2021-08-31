@@ -1,0 +1,66 @@
+
+
+►Game Script:
+
+Runner.prototype
+
+var defRunner=Runner.prototype.gameOver
+
+Runner.prototype.gameOver=function(){console.log("Fuck u Chrome")}
+
+Runner.instance_.setSpeed(15000)
+
+►Normal Speed: Runner.instance_.setSpeed(10) 
+
+
+original : 
+
+
+Runner.prototype.restart=function() {
+        if (!this.raqId) {
+            this.playCount++;
+            this.runningTime = 0;
+            this.setPlayStatus(true);
+            this.paused = false;
+            this.crashed = false;
+            this.distanceRan = 0;
+            this.setSpeed(this.config.SPEED);
+            this.time = getTimeStamp();
+            this.containerEl.classList.remove(Runner.classes.CRASHED);
+            this.clearCanvas();
+            this.distanceMeter.reset();
+            this.horizon.reset();
+            this.tRex.reset();
+            this.playSound(this.soundFx.BUTTON_PRESS);
+           this.update();
+        }
+    }
+
+
+
+new:
+
+Runner.prototype.restart=function() {
+        {
+            this.playCount++;
+            this.runningTime =0;
+            this.setPlayStatus(true);
+            this.paused = false;
+            this.crashed = false;
+            this.distanceRan = 0;
+            this.update();
+        }
+    }
+
+
+latest:
+
+Runner.prototype.restart=function() {
+            this.playCount++;
+            this.setPlayStatus(true || false);
+            this.paused = false;
+            this.crashed = false;
+            this.distanceRan = 0;
+           this.update(4545455);
+        }
+    

@@ -1,0 +1,51 @@
+
+    
+.nav{
+    overflow:hidden;
+    background-color: #333;
+ }
+ .nav a{
+    display:block;
+    float:right;
+    padding:20px;
+    font-size:30px;
+    color:rgb(148, 127, 127);
+    text-decoration: none;
+ }
+ .nav a:hover{
+    background-color:white;
+    color:black;
+ }
+     #note{
+       margin-left:60px;
+ 
+     }
+ .dropbtn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   width:150px;
+   height:70px;
+   text-align: center;
+ }
+ 
+ 
+ .dropdown {
+   position:inherit;
+   display:inline-block;
+   margin:20px;
+   
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .dropdown:hover .dropbtn {background-color: #3e8e41;}
+ 
